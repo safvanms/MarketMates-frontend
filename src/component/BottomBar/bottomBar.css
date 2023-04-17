@@ -1,0 +1,56 @@
+.bottom-bar{
+     display: none;
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+   }
+   
+   .option-bar{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 48px;
+     background-color: #1c1b1b;
+   }
+
+   .navLink{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+   }
+   
+   .option-bar>div>h1>*
+   {
+    color: #9c9999;
+    margin: 0;
+   } 
+
+   .option-names{
+    font-size: 11px;
+    margin: 0;
+   }
+
+   .option-names>p:nth-child(4){
+    font-size: 1px;
+    margin: 0;
+   }
+
+   
+   .active {
+    color: rgb(255, 255, 255) !important;
+  }
+   
+   
+   @media (max-width: 799px) {
+   
+     .bottom-bar{
+       display: block ;
+     }
+   
+   }
+
+  

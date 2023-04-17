@@ -1,0 +1,131 @@
+.feed-page {
+  width: 72%;
+  margin: 8px;
+  padding: 5px;
+}
+
+.feed-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.feed-card {
+  width: 46%;
+  border: 1px solid rgb(223, 218, 218);
+}
+
+.feed-card > div > p {
+  padding: 5px 10px 5px 10px;
+}
+
+.feed-single-post {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.feed-user-sec {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-text {
+  display: flex;
+}
+
+.feed-user-sec > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.feed-user-sec > div > h6 {
+  margin: 0;
+}
+
+.short-text {
+  width: 340px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expanded-text {
+  width: 100%;
+  white-space: inherit;
+  text-overflow: inherit;
+  overflow: visible;
+  margin: 0;
+}
+
+.social-sec {
+height: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-inline: 20px;
+  border-bottom: 1px solid rgb(210, 202, 202);
+}
+
+.social-sec>p{
+     margin: 0;
+     padding:0px 20px 0px 2px !important;
+}
+
+.social-comment-sec {
+  margin: 5px 20px 10px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.social-comment-sec > div > p,
+.social-comment-sec > div > h2 {
+  margin: 0;
+}
+
+.social-comment-sec > div  {
+  text-align: center;
+}
+
+.social-comment-sec>input{
+     width: 80%;
+     margin-inline: 15px;
+     padding: 5px;
+     border:none;
+     height: 30px;
+     background-color: #aaaaaa46;
+     border-radius: 10px;
+}
+
+@media (max-width: 1050px) {
+  .feed-page {
+    width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .feed-page {
+    width: 95%;
+  }
+  .feeds-cards {
+    width: 100%;
+  }
+  .feed-card {
+    width: 100%;
+    gap: 5px;
+  }
+  .short-text {
+    width: 260px;
+  }
+}

@@ -1,0 +1,80 @@
+.logo-name {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin-bottom: 20px;
+     position: relative;
+   }
+   
+   
+.hamburger{
+     margin: 0px 0px 10px 0px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 9px 0px 6px 4px;
+}
+
+.hamburger:hover{
+     color: rgb(113, 112, 112);
+}
+
+
+.logo-name>h2{
+     margin: 0;
+}
+
+.logo-name>div{
+     font-size: 22px;
+     position: absolute;
+     right: -20px;
+     top: -5px;
+}
+
+.logo-name>div:hover{
+    color: rgb(113, 112, 112);
+}
+
+.side-menu{
+     height: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 10px;
+     background-color:#bbbbbb1d;
+     margin-top: 10px;
+     padding: 10px;
+     border-radius: 6px;
+}
+
+.side-menu>h5{
+color: #fff;
+}
+
+.active .side-menu>div{
+    color: #fff;  
+}
+
+.active .side-menu{
+     background-color: #bbbbbb75;  
+}
+
+.side-menu:hover{
+     background-color: #bbbbbb75;  
+}
+
+.side-menu>div{
+     color: rgb(179, 176, 176);
+     font-size: 30px;
+     margin-bottom: 10px;
+}
+
+.side-menu>h5{
+     margin: 0;
+     font-size: 20px;
+     font-weight: 100;
+     text-transform: capitalize ;
+
+}
+
