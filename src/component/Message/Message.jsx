@@ -36,8 +36,8 @@ export default function Message() {
               src="https://picsum.photos/200/300"
               alt="avatar"
               style={{
-                width: '45px',
-                height: '45px',
+                width: '40px',
+                height: '35px',
                 borderRadius: '50px',
               }}
             />

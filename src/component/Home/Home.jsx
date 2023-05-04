@@ -8,6 +8,8 @@ import Message from '../Message/Message'
 import FeedPage from '../FeedPage/FeedPage'
 import NoPage from '../NoPage/NoPage'
 import Chat from '../Chats/Chat'
+import Login from '../Auth/Login'
+import Signup from '../Auth/Signup'
 
 export default function Home() {
   const [openSideBar, setOpenSideBar] = useState(false)
@@ -31,6 +33,8 @@ export default function Home() {
               <Route path="/home" element={<FeedPage />} />
               <Route path="*" element={<NoPage />} />
               <Route path="/chat" element={<Chat />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
             </Routes>
           </div>
           <div>
