@@ -44,7 +44,7 @@ export default function Sidebar({ openSideBar , setOpenSideBar }) {
           <div className="logo-name"
           onClick={() => setOpenSideBar((prevState) => !prevState)}
           >
-            <h2>LOGO_NAME</h2>
+            <h2>MarketMates</h2>
             <hr />
             <div>
               <BsChevronDoubleLeft/>

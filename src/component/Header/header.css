@@ -18,6 +18,11 @@
   transition: opacity 0.8s ease-in 0.9s;
 }
 
+.head-logo>h1{
+font-family: 'Pathway Extreme', sans-serif;
+font-weight: 400;
+}
+
 .small-device-nav{
    display: none;
  }

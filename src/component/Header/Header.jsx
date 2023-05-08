@@ -9,7 +9,7 @@ export default function Header({ openSideBar }) {
     <>
       <div className="header">
         <div className="head-logo" style={{ opacity: openSideBar ? 0 : 1 }}>
-          {!openSideBar && <h1>LOGO</h1>}
+          {!openSideBar && <h1>MarketMates</h1>}
         </div>
 
         <div className="small-device-nav">
