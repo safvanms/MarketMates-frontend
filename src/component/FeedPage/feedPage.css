@@ -85,15 +85,21 @@ gap: 5px;
 .social-sec {
 height: 25px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   margin-inline: 20px;
   border-bottom: 1px solid rgb(210, 202, 202);
 }
 
-.social-sec>p{
-     margin: 0;
-     padding:0px 20px 0px 2px !important;
+.social-sec>span{
+font-size:12px;
+     padding:0px 20px 5px 2px !important;
+     margin-right: 200px;
+}
+
+
+.social-sec>h3 {
+font-size:18px;
 }
 
 .social-comment-sec {
@@ -153,5 +159,11 @@ font-size: 12px;
   }
   .short-text {
     width: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+.short-text {
+    width: 220px;
   }
 }

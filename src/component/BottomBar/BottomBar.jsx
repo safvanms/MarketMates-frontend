@@ -44,7 +44,7 @@ export default function BottomBar() {
           <div key={element.link}>
             <h1>
               <NavLink style={{marginTop:"10px"}} className='navLink' exact to={element.link}>
-                {element.icon}
+                <span style={{fontSize:"22px"}} >{element.icon}</span>
                 <p className='option-names'>{element.name}</p>
               </NavLink>
             </h1>

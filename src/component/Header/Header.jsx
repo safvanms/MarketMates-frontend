@@ -41,7 +41,7 @@ export default function Header({ openSideBar }) {
         </div>
         <div className="small-device-nav">
           <Link to="/chat">
-            <h1 style={{ color: 'black' }}>
+            <h1 style={{ color: 'black', fontSize:"24px"}}>
               <BsChatText />
             </h1>
           </Link>

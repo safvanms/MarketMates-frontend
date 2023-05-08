@@ -11,6 +11,7 @@
   width: 100%;
   background-color: #fff !important;
   z-index: 1;
+  gap: 10px;
 }
 
 .head-logo {
@@ -26,6 +27,7 @@ font-weight: 400;
 .small-device-nav{
    display: none;
  }
+
 
  .small-device-options{
    margin-top: 100px;

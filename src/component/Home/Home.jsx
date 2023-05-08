@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Home.css'
-import { BrowserRouter, Routes, Route , useLocation, useNavigate} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Sidebar from '../Sidebar/Sidebar'
 import Header from '../Header/Header'
 import BottomBar from '../BottomBar/BottomBar'
@@ -14,35 +14,27 @@ import Signup from '../Auth/Signup'
 export default function Home() {
   const [openSideBar, setOpenSideBar] = useState(false)
 
-  // const pageLocation = useLocation();
-  // const navigate = useNavigate();
-
-  // const pageLocation = useLocation()
-  // console.log(pageLocation);
-  // const isAuthPages =
-  //   pageLocation.pathname === '/login' || pageLocation.pathname === '/signup';
-
-  
-
   return (
     <div>
       <BrowserRouter>
-        {/* {!isAuthPages && ( */} 
-         <Header openSideBar={openSideBar} setOpenSideBar={setOpenSideBar} /> 
+        {!window.location.pathname.includes('/login') &&
+          !window.location.pathname.includes('/signup') && (
+            <Header openSideBar={openSideBar} setOpenSideBar={setOpenSideBar} />
+          )}
         <div className="home">
-          <div
-            // onClick={() => setOpenSideBar((prevState) => !prevState)}
-            className={`sidebar ${
-              openSideBar ? 'sidebar-expanded' : 'closed-bar'
-            }`}
-          >
-            {/* {!isAuthPages && ( */}
-              <Sidebar
-                openSideBar={openSideBar}
-                setOpenSideBar={setOpenSideBar}
-              />
-            {/* )} */}
-          </div>
+          {!window.location.pathname.includes('/login') &&
+            !window.location.pathname.includes('/signup') && (
+              <div
+                className={`sidebar ${
+                  openSideBar ? 'sidebar-expanded' : 'closed-bar'
+                }`}
+              >
+                <Sidebar
+                  openSideBar={openSideBar}
+                  setOpenSideBar={setOpenSideBar}
+                />
+              </div>
+            )}
           <div className="home-sec">
             <Routes>
               <Route index element={<FeedPage />} />
@@ -54,13 +46,15 @@ export default function Home() {
             </Routes>
           </div>
           <div></div>
-          <div style={{ position: 'fixed', top: '70px', right: '0' }}>
-            <Message />
-          </div>
+          {!window.location.pathname.includes('/login') &&
+            !window.location.pathname.includes('/signup') && (
+              <div style={{ position: 'fixed', top: '70px', right: '0' }}>
+                <Message />
+              </div>
+            )}
         </div>
-        {/* {!isAuthPages && */}
-         <BottomBar />
-         {/* } */}
+        {!window.location.pathname.includes('/login') &&
+          !window.location.pathname.includes('/signup') && <BottomBar />}
       </BrowserRouter>
     </div>
   )
